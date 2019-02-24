@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+        android:id="@+id/verticalSeekBarWrapper"
+        android:layout_width="110dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+            android:id="@+id/SeekBar_R"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:splitTrack="false"
+            app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
+    </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+    <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+        android:id="@+id/verticalSeekBarWrapper3"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        app:layout_constraintBottom_toBottomOf="@+id/verticalSeekBarWrapper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/verticalSeekBarWrapper">
+
+        <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+            android:id="@+id/SeekBar_L"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:splitTrack="false"
+            app:seekBarRotation="CW270" /> <!-- Rotation: CW90 or CW270 -->
+    </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+    <TextView
+        android:id="@+id/textView_L"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/verticalSeekBarWrapper3"
+        app:layout_constraintEnd_toEndOf="@+id/verticalSeekBarWrapper3"
+        app:layout_constraintStart_toStartOf="@+id/verticalSeekBarWrapper3" />
+
+    <TextView
+        android:id="@+id/textView_R"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="0"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/verticalSeekBarWrapper"
+        app:layout_constraintEnd_toEndOf="@+id/verticalSeekBarWrapper"
+        app:layout_constraintStart_toStartOf="@+id/verticalSeekBarWrapper" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="L"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/verticalSeekBarWrapper3"
+        app:layout_constraintStart_toStartOf="@+id/verticalSeekBarWrapper3"
+        app:layout_constraintTop_toBottomOf="@+id/verticalSeekBarWrapper3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="R"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/verticalSeekBarWrapper"
+        app:layout_constraintStart_toStartOf="@+id/verticalSeekBarWrapper"
+        app:layout_constraintTop_toBottomOf="@+id/verticalSeekBarWrapper" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

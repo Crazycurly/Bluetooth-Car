@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BTcar</string>
+    <string name="action_scan">SCAN</string>
+    <string name="action_stop">STOP</string>
+    <string name="activity_device">Device</string>
+    <string name="title_activity_setting">SettingActivity</string>
+</resources>
